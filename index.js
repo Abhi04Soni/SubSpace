@@ -58,8 +58,6 @@ router.get('/blog-stats', (req, res) => {
                 numberOfBlogsWithPrivacyTitle,
                 uniqueBlogTitles,
             };
-
-            //respond to client
             res.status(200).json(data);
         }
         else {
